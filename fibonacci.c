@@ -2,9 +2,9 @@
 int main(){
     int first=0,next,second=1;
     int c,n;
-    printf("enetr the no of fibonacci terms %d",n);
+    printf("Enter the no of fibonacci terms :\n");
     scanf("%d",&n);
-    printf(" Required fibonacci series");
+    printf(" Required fibonacci series :\n");
     for(c=0;c<n;c++){
      if(c<=1){
          next=c;
