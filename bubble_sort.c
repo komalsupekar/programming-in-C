@@ -16,15 +16,15 @@ int main()
 		printf("%d\t",arr[i] );
 	}						
 	//sorting process
-	for(i=0;i<length;i++)
+	for(i=0;i<length-1;i++)
 	{
 		for(j=i;j<length;j++)
 		{
 			if (arr[i]>arr[j])
 			{
-				temp=arr[i];
-				arr[i]=arr[j];
-				arr[j]=temp;
+				arr[i]=arr[i]+arr[j];
+				arr[j]=arr[i]-arr[j];
+				arr[i]=arr[i]-arr[j];
 			}
 		}
 	}
